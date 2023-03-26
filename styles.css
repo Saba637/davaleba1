@@ -8,13 +8,23 @@
     margin: 0 auto;
 }
 
+a:link {
+    text-decoration: none;
+  }
+
 .nav_links{
     font-family: 'Open Sans', sans-serif;
     color: #9893A3;
     display: flex;
     gap: 25px;
     list-style: none;
+    text-decoration: none;
     
+}
+
+a:visited{
+    color: #9893A3;
+    text-decoration: none;
 }
 
 .secondary_button{
