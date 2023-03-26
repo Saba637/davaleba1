@@ -8,10 +8,6 @@
     margin: 0 auto;
 }
 
-a:link {
-    text-decoration: none;
-  }
-
 .nav_links{
     font-family: 'Open Sans', sans-serif;
     color: #9893A3;
@@ -21,6 +17,10 @@ a:link {
     text-decoration: none;
     
 }
+a:link {
+    text-decoration: none;
+    color: #9893A3;
+  }
 
 a:visited{
     color: #9893A3;
