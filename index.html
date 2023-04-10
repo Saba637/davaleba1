@@ -12,12 +12,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
-<body class="background_color">
+<body>
 
 
   <header id="header">
-    <img src="./pictures/Logo.png" alt="logo">
+    <div class="navbar">
+      <img src="./pictures/Logo.png" alt="logo">
     <nav>
       <ul class="nav_links"> 
         <li><a href="#section1">Home</a></li>
@@ -31,20 +34,24 @@
       <button class="secondary_button">Log in</button>
       <button class="primary_button">Get started</button>
     </div>
+    </div>
+    
   </header>
 
-
+  <!--  ჯერ არ დამიმთავრებია, ამ დღეებშ ყველაფერი თავიდან უნდა ავაწყო -->
   <section id="section1">
-    <div class="container page1">
-      <div class="w50">
-        <div class="hero_contant">
-          <h1>Let’s get <br> fusely <br> together</h1>
-          <p class="information">Outcome-centered product that reduce churn,<br>optimize pricing, and grow your subscription<br>business end-to-end.</p>
-          <button class="primary_button">Get started</button>
+    <div class="container  mt84">
+      <div class="row justify-content-between">
+        <div class="col-12 col-lg-6">
+          <div class="hero_contant ">
+            <p class="header1">Let’s get <br> fusely <br> together</p> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h1ის მაგივრად P მაგიტომ გამოვიყენე -->
+            <p class="information">Outcome-centered product that reduce churn,<br>optimize pricing, and grow your subscription<br>business end-to-end.</p>
+            <button class="primary_button">Get started</button>
+          </div>
         </div>
-      </div>
-      <div class="w50">
-        <img src="./pictures/Hero image.png" alt="hero" class="picture_hero">
+        <div class="col-12 col-lg-6  justify-content-center">
+          <img src="./pictures/Hero image.png" alt="hero" class="picture_hero">
+        </div>
       </div>
     </div>
   </section>
@@ -52,35 +59,40 @@
 
   <section id="section2">
     <div>
-      <ul class="nav_links partners"> 
-        <li><img src="./pictures/binator logo (1).svg" alt=""></li>
-        <li><img src="./pictures/buyme logo.svg" alt=""></li>
-        <li><img src="./pictures/loogipsum logo.svg" alt=""></li>
-        <li><img src="./pictures/umbrella logo.svg" alt=""></li>
-        <li><img src="./pictures/square logo.svg" alt=""></li>
-      </ul>
-      <div class="container page2">
-        <div class="w50">
-          <img src="./pictures/Section Image.png" alt="hero" class="picture_hero">
-        </div>
-  
-        <div class="w50">
-          <div class="hero_contant">
-            <h2>Detailed Examination</h2>
-            <p class="information">A daily dataset to keep you up to date on <br> subscription market trends and what's <br> happening in your vertical.</p>
-            <button class="primary_button">Learn more</button>
+      <div class="container">
+        <ul class="col-12 nav_links partners justify-content-between"> 
+          <li><img src="./pictures/binator logo (1).svg" alt=""></li>
+          <li><img src="./pictures/buyme logo.svg" alt=""></li>
+          <li><img src="./pictures/loogipsum logo.svg" alt=""></li>
+          <li><img src="./pictures/umbrella logo.svg" alt=""></li>
+          <li><img src="./pictures/square logo.svg" alt=""></li>
+        </ul>
+      </div>
+      <div class="container  mt220">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-5 order-lg-2">
+            <div class="detailed_content">
+              <p class="header2">Detailed Examination</p>
+              <p class="information">A daily dataset to keep you up to date on <br> subscription market trends and what's <br> happening in your vertical.</p>
+              <button class="primary_button">Learn more</button>
+            </div>
           </div>
+
+          <div class="col-12 col-lg-7 order-lg-1">
+            <img src="./pictures/Section Image.png" alt="hero" class="picture_hero">
+          </div>
+
         </div>
       </div>
     </div>
-    <div id="pricing" class="container">
-      <div>
-        <h2 class="pricing">
+    <div id="pricing" class="container mt220">
+      <div class="col-12">
+        <p class=" pricing header2"> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h2ის მაგივრად P მაგიტომ გამოვიყენე -->
           Choose your plan
-        </h2>
+        </p>
       </div>
-      <div class="pricecard">
-        <div class="secondary_pricetag">
+      <div class="row align-items-center justify-content-between">
+        <div class="col secondary_pricetag col-12 col-lg-3">
           <p class="starter">
             Starter
           </p>
@@ -97,7 +109,7 @@
           </button>
         </div>
 
-        <div class="main_pricetag">
+        <div class="col main_pricetag col-12 col-lg-3">
           <p class="starter mt70 cwhite">
             Premium
           </p>
@@ -114,7 +126,7 @@
           </button>
         </div>
 
-        <div class="secondary_pricetag">
+        <div class="col secondary_pricetag col-12 col-lg-3" >
           <p class="starter">
             Starter
           </p>
@@ -136,14 +148,18 @@
 
 
   <section id="section3">
-    <div class="contact_banner">
-      <div class="banner_info">
-        <h3>
+    <div class="contact_banner col-12 col-lg-8" >
+      <div class="banner_info row ">
+        <p class="header3 col-12 col-lg-9 "> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h3ის მაგივრად P მაგიტომ გამოვიყენე -->
           Interested in <br> getting fusely?
-        </h3>
-        <button class="primary_button">
-          Let's talk
-        </button>
+        </p>
+
+        <div class="col-12 col-lg-3">
+          <button class=" primary_button">
+            Let's talk
+          </button>
+        </div>
+        
       </div>  
     </div>
   </section>
@@ -151,42 +167,50 @@
 
   <footer id="contacts">
     <div class="footer">
-      <div class="footer_content">
-        <ul class="frame">
-          <li class="contacts">Product</li>
-          <li>How it Works</li>
-          <li>Features</li>
-          <li>pricing</li>
-          <li>FAQ</li>
-          <li>Download</li>
-        </ul>
-
-        <ul class="frame">
-          <li class="contacts">Company</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Partnership</li>
-          <li>Terms of use</li>
-          <li>Privacy policy</li>
-        </ul>
-
-        <ul class="frame">
-          <li class="contacts">Support</li>
-          <li>Help center</li>
-          <li>Contac us</li>
-        </ul>
-
-        <ul class="frame">
-          <li class="contacts">Get in touch</li>
-          <img src="./pictures/Social media icon.png" alt="">
-          <img src="./pictures/Social media icon (1).png" alt="">
-          <img src="./pictures/Social media icon (2).png" alt="">
-        </ul>
+      <div class="footer_content col-6">
+        <div class="row">
+          <div class="frame col-6 col-lg-3">
+            <ul class="frame">
+              <li class="contacts">Product</li>
+              <li>How it Works</li>
+              <li>Features</li>
+              <li>pricing</li>
+              <li>FAQ</li>
+              <li>Download</li>
+            </ul>
+          </div>
+          <div class=" col-6 col-lg-3">
+            <ul class="frame">
+              <li class="contacts">Company</li>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Partnership</li>
+              <li>Terms of use</li>
+              <li>Privacy policy</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <ul class="frame">
+              <li class="contacts">Support</li>
+              <li>Help center</li>
+              <li>Contac us</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <ul class="frame">
+              <li class="contacts">Get in touch</li>
+              <img src="./pictures/Social media icon.png" alt="">
+              <img src="./pictures/Social media icon (1).png" alt="">
+              <img src="./pictures/Social media icon (2).png" alt="">
+            </ul>
+          </div>
+        </div>
+               
       </div>
 
-      <div class="bottom_info">
+      <div class="bottom_info col-12">
         <img src="./pictures/Logo.png" alt="logo" class="logo">
-        <p class="information"> © Fusely 2021. All rights reserved.</p>
+        <p class="botom_information"> © Fusely 2021. All rights reserved.</p>
       </div>
     </div>
   </footer>

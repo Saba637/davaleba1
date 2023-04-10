@@ -3,15 +3,6 @@
     padding: 0;
 }
 
-.background_color{
-    background-color: #F2F2F2;
-}
-
-.container{
-    width: 1180px;
-    margin: 0 auto;
-}
-
 .nav_links{
     font-family: 'Open Sans', sans-serif;
     color: #9893A3;
@@ -51,15 +42,18 @@ a:visited{
     font-family: 'Open Sans', sans-serif;
 }
 
-header{
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin:0 auto;
+}
+
+header{
     padding: 30px 10%;
 }
 
-h1{
+.header1{ 
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 86px;
@@ -67,7 +61,7 @@ h1{
     letter-spacing: -1px;  
 }
 
-h2{
+.header2{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 60px;
@@ -75,7 +69,7 @@ h2{
     letter-spacing: -1px;
 }
 
-h3{
+.header3{
     font-family: 'Playfair Display', serif;
     font-weight: 700px;
     font-size: 50px;
@@ -90,23 +84,14 @@ h3{
     color: #9893A3;
     margin: 30px auto;
 }
-.page1{
-    display: flex;
-    justify-content: space-between;
-    margin: 84px auto;
+
+.mt84{
+    margin-top: 84px;
 }
 
-.page2{
-    display: flex;
-    justify-content: space-between;
-    margin:220px auto;
-    gap: 180px;
-}
 
-.pricecard{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.mt220{
+    margin-top: 220px;
 }
 
 .picture_hero{
@@ -116,12 +101,12 @@ h3{
     padding: 41px 49px 41px 0px;
 }
 
-.w50{
-    width: 50%;
+.detailed_content{
+    padding: 41px 0px 41px 49px;
 }
 
+
 .partners{
-    justify-content: space-between;
     margin: 0 auto;
     width: 900px;
     margin-top: 50px;
@@ -131,7 +116,6 @@ h3{
     background-color: #6C63FF;
     width: 363px;
     height: 502px;
-    margin: auto 45px;
     text-align: center;
 
 }
@@ -218,7 +202,6 @@ h3{
 }
 
 .contact_banner{
-    width: 900px;
     background-color:#2F2E41 ;
     margin: 180px auto;
 }
@@ -230,15 +213,15 @@ h3{
     padding: 84px;
 }
 
+
 .footer{
     width: 100%;
-    height: 598px;
+    height: auto;
     background-color: #ECEBFF;
     
 }
 
 .footer_content{
-    width: 800px;
     justify-content: space-between;
     display: flex;
     padding-top: 244px;
@@ -253,11 +236,16 @@ h3{
 
 .bottom_info{
     display: flex;
-    justify-content: space-between;
-    gap: 1080px;
     align-items: center;
-    margin:0 auto;
-    padding: 0 80px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 84px
+}
+.botom_information{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #9893A3;
 }
 
 
