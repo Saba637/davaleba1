@@ -12,87 +12,111 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
+
 <body>
-
-
+  
   <header id="header">
-    <div class="navbar">
-      <img src="./pictures/Logo.png" alt="logo">
-    <nav>
-      <ul class="nav_links"> 
-        <li><a href="#section1">Home</a></li>
-        <li><a href="#section2">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#section3">Blog</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-    </nav>
-    <div>
-      <button class="secondary_button">Log in</button>
-      <button class="primary_button">Get started</button>
-    </div>
-    </div>
-    
-  </header>
-
-  <!--  ჯერ არ დამიმთავრებია, ამ დღეებშ ყველაფერი თავიდან უნდა ავაწყო -->
-  <section id="section1">
-    <div class="container  mt84">
-      <div class="row justify-content-between">
-        <div class="col-12 col-lg-6">
-          <div class="hero_contant ">
-            <p class="header1">Let’s get <br> fusely <br> together</p> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h1ის მაგივრად P მაგიტომ გამოვიყენე -->
-            <p class="information">Outcome-centered product that reduce churn,<br>optimize pricing, and grow your subscription<br>business end-to-end.</p>
-            <button class="primary_button">Get started</button>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./pictures/Logo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav_links navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section4">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="secondary_button">Contact us</button>
+              <button class="primary_button">Contact us</button>
+            </form>
           </div>
         </div>
-        <div class="col-12 col-lg-6  justify-content-center">
-          <img src="./pictures/Hero image.png" alt="hero" class="picture_hero">
+      </nav>
+    </div>
+  </header>
+
+  <section id="section1">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-lg-4">
+          <h1 class="title1">Let’s get fusely together</h1>
+          <p class="information">Outcome-centered product that reduce churn, optimize pricing, and grow your subscription business end-to-end.</p>
+          <button class="primary_button">Get started</button>
+        </div>
+        <div class="col-12 col-lg-6">
+          <img src="./pictures/Hero image.png" class="image" alt="hero">
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+              <ul class="nav_links justify-content-center d-flex"> 
+                <li ><img src="./pictures/binator logo (1).svg" class="image" alt=""></li>
+                <li><img src="./pictures/buyme logo.svg" class="image" alt=""></li>
+                <li><img src="./pictures/loogipsum logo.svg" class="image" alt=""></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-4">
+              <ul class="nav_links justify-content-center d-flex"> 
+                <li><img src="./pictures/umbrella logo.svg" class="image" alt=""></li>
+                <li><img src="./pictures/square logo.svg" class="image" alt=""></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-
   <section id="section2">
-    <div>
-      <div class="container">
-        <ul class="col-12 nav_links partners justify-content-between"> 
-          <li><img src="./pictures/binator logo (1).svg" alt=""></li>
-          <li><img src="./pictures/buyme logo.svg" alt=""></li>
-          <li><img src="./pictures/loogipsum logo.svg" alt=""></li>
-          <li><img src="./pictures/umbrella logo.svg" alt=""></li>
-          <li><img src="./pictures/square logo.svg" alt=""></li>
-        </ul>
-      </div>
-      <div class="container  mt220">
-        <div class="row justify-content-between">
-          <div class="col-12 col-lg-5 order-lg-2">
-            <div class="detailed_content">
-              <p class="header2">Detailed Examination</p>
-              <p class="information">A daily dataset to keep you up to date on <br> subscription market trends and what's <br> happening in your vertical.</p>
-              <button class="primary_button">Learn more</button>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-7 order-lg-1">
-            <img src="./pictures/Section Image.png" alt="hero" class="picture_hero">
-          </div>
-
+    <div class="container">
+      <div class="row justify-content-between align-items-center ">
+        <div class="col-lg-4 order-lg-2">
+          <h2 class="title2">Detailed Examination</h2>
+          <p class="information">A daily dataset to keep you up to date on subscription market trends and what's happening in your vertical.</p>
+          <button class="primary_button">Learn more</button>
         </div>
+
+        <div class="col-lg-6 order-lg-1">
+          <img src="./pictures/Section Image.png" class="image" alt="picture">
+        </div>
+        
       </div>
     </div>
-    <div id="pricing" class="container mt220">
-      <div class="col-12">
-        <p class=" pricing header2"> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h2ის მაგივრად P მაგიტომ გამოვიყენე -->
-          Choose your plan
-        </p>
-      </div>
+  </section>
+
+  <section id="section3">
+    <div class="container">
       <div class="row align-items-center justify-content-between">
-        <div class="col secondary_pricetag col-12 col-lg-3">
+        <div class="col-12">
+          <h2 class="pricing title2">
+            Choose your plan
+          </h2>
+        </div>
+
+        <div class="col-12 col-lg-3 secondary_pricetag">
           <p class="starter">
             Starter
           </p>
@@ -101,16 +125,16 @@
           </p>
           <ul class="frame">
             <li>Dashboard</li>
-            <li>Limited Support</li>
-            <li>Forever free</li>
+            <li>Limited</li>
+            <li>Forever</li>
           </ul>
-          <button class="price_button1 mt30">
+          <button class="price_button1">
             Get started
           </button>
         </div>
 
-        <div class="col main_pricetag col-12 col-lg-3">
-          <p class="starter mt70 cwhite">
+        <div class="col-12 col-lg-4 main_pricetag">
+          <p class="starter cwhite mt70">
             Premium
           </p>
           <p class="price mt40 cwhite">
@@ -126,17 +150,17 @@
           </button>
         </div>
 
-        <div class="col secondary_pricetag col-12 col-lg-3" >
+        <div class="col-12 col-lg-3 secondary_pricetag">
           <p class="starter">
-            Starter
+            Enterprise
           </p>
           <p class="price">
-            Free
+            $49<sub class="sub">/month </sub>
           </p>
           <ul class="frame">
-            <li>Dashboard</li>
-            <li>Limited Support</li>
-            <li>Forever free</li>
+            <li>All features in Premium</li>
+            <li>Realtime overview</li>
+            <li>Mobile app</li>
           </ul>
           <button class="price_button1">
             Get started
@@ -144,76 +168,79 @@
         </div>
       </div>
     </div>
+
   </section>
 
-
-  <section id="section3">
-    <div class="contact_banner col-12 col-lg-8" >
-      <div class="banner_info row ">
-        <p class="header3 col-12 col-lg-9 "> <!--  ბუტსტრაპის გამო ტექსტის ფონტი აირია და h3ის მაგივრად P მაგიტომ გამოვიყენე -->
+  <section id="section4">
+    <div class="container contact_banner col-12 col-lg-9">
+      <div class="row p84 d-flex align-items-center justify-content-between">
+        <p class="col-12 col-lg-7 title3">
           Interested in <br> getting fusely?
         </p>
-
+  
         <div class="col-12 col-lg-3">
           <button class=" primary_button">
             Let's talk
           </button>
         </div>
-        
-      </div>  
+      </div>
     </div>
   </section>
-  
 
-  <footer id="contacts">
-    <div class="footer">
-      <div class="footer_content col-6">
-        <div class="row">
-          <div class="frame col-6 col-lg-3">
-            <ul class="frame">
-              <li class="contacts">Product</li>
-              <li>How it Works</li>
-              <li>Features</li>
-              <li>pricing</li>
-              <li>FAQ</li>
-              <li>Download</li>
-            </ul>
-          </div>
-          <div class=" col-6 col-lg-3">
-            <ul class="frame">
-              <li class="contacts">Company</li>
-              <li>About</li>
-              <li>Blog</li>
-              <li>Partnership</li>
-              <li>Terms of use</li>
-              <li>Privacy policy</li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-3">
-            <ul class="frame">
-              <li class="contacts">Support</li>
-              <li>Help center</li>
-              <li>Contac us</li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-3">
-            <ul class="frame">
+  <footer id="footer">
+    <div class="container ">
+      <div class="row pt244">
+        <div class="col-6 col-lg-3">
+          <ul class="frame">
+            <li class="contacts">Product</li>
+            <li>How it Works</li>
+            <li>Features</li>
+            <li>pricing</li>
+            <li>FAQ</li>
+            <li>Download</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <ul class="frame">
+            <li class="contacts">Company</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Partnership</li>
+            <li>Terms of use</li>
+            <li>Privacy policy</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <ul class="frame">
+            <li class="contacts">Support</li>
+            <li>Help center</li>
+            <li>Contac us</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <ul class="frame">
               <li class="contacts">Get in touch</li>
               <img src="./pictures/Social media icon.png" alt="">
               <img src="./pictures/Social media icon (1).png" alt="">
               <img src="./pictures/Social media icon (2).png" alt="">
             </ul>
-          </div>
         </div>
-               
-      </div>
-
-      <div class="bottom_info col-12">
-        <img src="./pictures/Logo.png" alt="logo" class="logo">
-        <p class="botom_information"> © Fusely 2021. All rights reserved.</p>
+        <div class="bottom_info col-12">
+          <img src="./pictures/Logo.png" alt="logo">
+          <p class="botom_information"> © Fusely 2021. All rights reserved.</p>
+        </div>
       </div>
     </div>
   </footer>
 
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
 </body>
 </html>
